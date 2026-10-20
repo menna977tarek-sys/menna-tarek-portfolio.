@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menna Tarek – Accountant</title>
+<meta name="description" content="Menna Tarek, accountant in Cairo. Reconciliation across 17 branches, sales and inventory tracking, commissions, payroll, withholding tax and financial reporting.">
+<style>
+:root{--bg:#FBF6F8;--surface:#fff;--ink:#2A1822;--mute:#6A5560;--line:#EBD8DF;--acc:#A64B6B;--baby:#F2B8CB;--soft:#F7E9EF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#170E13;--surface:#22141C;--ink:#F6EAF0;--mute:#BFA3B0;--line:#3A2530;--acc:#F0A9C2;--baby:#F0A9C2;--soft:#2C1822}}
+:root[data-theme="dark"]{--bg:#170E13;--surface:#22141C;--ink:#F6EAF0;--mute:#BFA3B0;--line:#3A2530;--acc:#F0A9C2;--baby:#F0A9C2;--soft:#2C1822}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Public Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;margin:0;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;text-decoration:none}
+nav{display:flex;gap:22px;align-items:center;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}
+@media(max-width:640px){nav a.hide{display:none}}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;border:1.5px solid var(--acc);color:var(--acc)}
+.btn.fill{background:var(--baby);border-color:var(--baby);color:#2A1822}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.hero{padding:68px 0 56px}
+.role{color:var(--acc);font-weight:600;margin:0 0 14px}
+h1{font-size:clamp(46px,9vw,84px);font-weight:700}
+.hero h2{font-size:clamp(24px,3.8vw,34px);font-weight:500;margin:22px 0 16px;max-width:20em}
+.lead{color:var(--mute);max-width:34em;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.facts div{padding:22px 20px;border-right:1px solid var(--line)}
+.facts div:last-child{border-right:0}
+.facts b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:40px;line-height:1;color:var(--acc);font-variant-numeric:tabular-nums}
+.facts span{display:block;margin-top:8px;font-size:14px;color:var(--mute);line-height:1.4}
+@media(max-width:700px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2.t{font-size:clamp(30px,5vw,42px);font-weight:700;margin-bottom:20px}
+p{margin:0 0 16px;max-width:40em}
+.mute{color:var(--mute)}
+.src{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+@media(max-width:760px){.src{grid-template-columns:1fr 1fr}}
+.src div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;font-weight:600;font-size:16px}
+.src small{display:block;font-weight:400;color:var(--mute);font-size:14px;margin-top:4px}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:20px}
+.job .when{color:var(--mute);font-size:15px}
+.job h3{font-size:clamp(22px,3.2vw,28px);margin:6px 0 2px}
+.job .at{color:var(--acc);font-weight:600;margin:0 0 14px}
+.job ul{margin:0;padding-left:20px;color:var(--mute)}
+.job li{margin-bottom:8px}
+.job li::marker{color:var(--acc)}
+.skills{display:grid;grid-template-columns:200px 1fr;margin:0}
+.skills dt{padding:16px 0;border-top:1px solid var(--line);font-weight:600}
+.skills dd{margin:0;padding:16px 0;border-top:1px solid var(--line);color:var(--mute)}
+@media(max-width:700px){.skills{grid-template-columns:1fr}.skills dt{padding-bottom:2px}.skills dd{border-top:0;padding-top:0}}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:16px 0;border-top:1px solid var(--line)}
+.list li:last-child{border-bottom:1px solid var(--line)}
+.list b{display:block}
+.list span{color:var(--mute);font-size:15px}
+.cta2{background:var(--baby);color:#2A1822;border-radius:16px;padding:44px 32px}
+.cta2 h2{font-size:clamp(28px,4.4vw,40px);margin-bottom:14px;max-width:16em}
+.cta2 p{max-width:30em}
+.links{display:grid;max-width:470px;margin-top:24px}
+.links a{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid rgba(42,24,34,.25);text-decoration:none;font-weight:500;word-break:break-word}
+.links small{opacity:.75;font-weight:400}
+footer{padding:28px 0 44px;color:var(--mute);font-size:14px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Menna Tarek</a>
+<nav><a class="hide" href="#experience">Experience</a><a class="hide" href="#skills">Skills</a><a class="btn fill" style="padding:8px 16px;font-size:15px" href="#contact">Contact</a></nav>
+</div></header>
 
+<main id="top">
+<div class="wrap hero">
+<p class="role">Accountant · Cairo, Egypt</p>
+<h1>Menna Tarek</h1>
+<h2>I reconcile sales across 17 branches against the bank, Odoo and the paper records.</h2>
+<p class="lead">Experience in retail and tourism: reconciliation, sales and inventory tracking, commissions, payroll, withholding tax and financial reporting.</p>
+<div class="cta"><a class="btn fill" href="mailto:menna977tarek@gmail.com">Email me</a><a class="btn" href="https://wa.me/201117784728">WhatsApp</a></div>
+<div class="facts">
+<div><b>17</b><span>branches handled at New Activ</span></div>
+<div><b>2</b><span>sectors: retail and tourism</span></div>
+<div><b>3</b><span>years of full branch accounting</span></div>
+<div><b>2021</b><span>B.Sc. Computer Science, Ain Shams</span></div>
+</div>
+</div>
+
+<section id="method"><div class="wrap">
+<h2 class="t">How I check the numbers</h2>
+<p class="mute">Each branch’s sales are checked against four sources. When two of them disagree, I trace the difference back and correct it.</p>
+<div class="src">
+<div>Bank website<small>branch sales</small></div>
+<div>Odoo<small>system records</small></div>
+<div>Paper documents<small>invoices and permits</small></div>
+<div>Warehouse<small>goods receipt and issue</small></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2 class="t">Experience</h2>
+<div class="job">
+<div class="when">2026 – Present</div>
+<h3>Branch Accountant</h3><p class="at">New Activ</p>
+<ul>
+<li>Manage accounting for 17 branches and keep records consistent across all of them.</li>
+<li>Reconcile each branch’s sales against the bank’s website and the Odoo system, and match sales and goods movement to paper documents.</li>
+<li>Track goods receipt and issue permits with the warehouse and branches.</li>
+<li>Calculate sales commissions for every salesperson, matched to paper records and the system.</li>
+<li>Reconcile staff custody balances and monitor branch cash flow, revenue and expenses for management reports.</li>
+</ul>
+</div>
+<div class="job">
+<div class="when">2023 – 2026</div>
+<h3>Accountant &amp; Financial Operations</h3><p class="at">Marbya Tours</p>
+<ul>
+<li>Ran full branch accounting independently, recording daily transactions in the ERP and Excel.</li>
+<li>Processed monthly payroll: salaries, commissions, deductions and net pay.</li>
+<li>Calculated withholding tax under Egyptian tax rules.</li>
+<li>Helped the CPA prepare and submit e-invoices through the Egyptian Tax Authority system.</li>
+<li>Collected client payments in cash and by bank, and reconciled them daily.</li>
+<li>Managed vendor accounts, built sales tracking sheets, and prepared monthly and annual reports.</li>
+<li>Received a Certificate of Appreciation for performance in financial and accounting operations.</li>
+</ul>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="t">Skills</h2>
+<dl class="skills">
+<dt>Accounting</dt><dd>Full-cycle and multi-branch accounting, sales accounting, inventory movement tracking, commission calculation, payroll, cash and bank, vendor and customer accounts, custody management</dd>
+<dt>Tax and invoicing</dt><dd>Withholding tax, electronic invoicing, social insurance deductions</dd>
+<dt>Reporting</dt><dd>Financial record-keeping, sales tracking sheets, monthly and annual reports</dd>
+<dt>Tools</dt><dd>ERP systems (Odoo), Microsoft Excel, Word, PowerPoint, Outlook</dd>
+<dt>Languages</dt><dd>Arabic (native), English (good, written and spoken)</dd>
+</dl>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2 class="t">Education and training</h2>
+<ul class="list">
+<li><b>B.Sc. Computer Science</b><span>Ain Shams University, Faculty of Science · 2021</span></li>
+<li><b>Data Analysis training</b><span>DEPI, Digital Egypt Pioneers Initiative</span></li>
+<li><b>Data Engineering training</b><span>DEPI, Digital Egypt Pioneers Initiative</span></li>
+</ul>
+</div></section>
+
+<section id="contact" style="border-top:0"><div class="wrap">
+<div class="cta2">
+<h2>Let’s talk</h2>
+<p>Send me a message and I’ll reply as soon as I can.</p>
+<div class="links">
+<a href="mailto:menna977tarek@gmail.com"><small>Email</small><span>menna977tarek@gmail.com</span></a>
+<a href="tel:+201117784728"><small>Phone</small><span>+20 111 778 4728</span></a>
+<a href="https://wa.me/201117784728"><small>WhatsApp</small><span>Message me</span></a>
+</div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">Menna Tarek · Accountant · Cairo, Egypt · © 2026</div></footer>
+</body>
+</html>
